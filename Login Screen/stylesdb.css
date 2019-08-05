@@ -1,0 +1,152 @@
+body{
+  background-color: white;
+}
+
+.active {
+  background-color: white; /* Add an active/current color */
+} 
+hr{
+  color: #116466;
+}
+img.avatar {
+  width: 40px;
+  border-radius: 50%;
+  float:left;
+  padding: 12px;
+  height: 40px;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+  width:20%;
+  font-size: 28px;
+  color:#116466;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #116466;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #116466;
+  color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #116466;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #116466;
+  color: white; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-img {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-img {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-img:hover .dropdown-content-img {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+  /* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 16px;
+  margin-top: 85px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 10px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #116466;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #116466;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}

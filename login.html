@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HRManagement</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;background-color: #F8F8FF; color:#999;}
+h2{
+	text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+button {
+  background-color: #116466;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+.col-aligncenter{float: none;margin: 0 auto;}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="row">
+	<div class="col-md-3 m-5">
+	</div>
+	<div class="col-md-3 ml-5 mt-5 p-5 border rounded-sm" style="background-color: white;">
+	<h2>Login</h2>
+
+		<form action="/action_page.php">
+  			<div class="imgcontainer">
+    			<img src="img_avatar3.png" alt="Avatar" class="avatar">
+ 			</div>
+
+ 			<div class="container">
+    			<label for="uname"><b>Username</b></label>
+    			<input id="usr" type="text" value="admin" placeholder="Enter Username" name="uname" required>
+
+    			<label for="psw"><b>Password</b></label>
+    			<input id ="pw" type="password" value="password" placeholder="Enter Password" name="psw" required>
+        
+    			<button type="submit">Login</button>
+    			<label>
+      			<input type="checkbox" checked="checked" name="remember"> Remember me
+    			</label>
+  			</div>
+  			<div class="bottom center-block" >
+  				<span class="helper-text m-b-10"><i class="fa fa-lock"></i><a href="login.html" >Forgot Password?</a></span>		
+
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
