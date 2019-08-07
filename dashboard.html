@@ -80,25 +80,9 @@
     <div class="col center-split" id="employees-profile-companies">
       <div id="employees-profile">   
         <div id="employees">
-          <table>
-          	<tr>
-          		<th>Employee</th>
-          		<th>Job Role
-          	</tr>
-          	<tr>
-          		<td>Karim</td>
-          		<td>Developer</td>
-          	</tr>
-          	<tr>
-          		<td>Ahmed</td>
-          		<td>Developer</td>
-          	</tr>
-          	<tr>
-          		<td>Youssef</td>
-          		<td>Architect</td>
-          	</tr>
-          </table>
-          <p><a href='#' id="linkToCompanies" style="margin-left: 30%;">All Employees</a></p>
+          <button class="btn"><i class="fa fa-users icon" style="float: "></i></button>
+          <hr style="margin-top: 20%;">
+          <h4 style="text-align: center;">Employees</h4>
         </div>
         <div id="profile">
         	<div class="flip-card">
@@ -119,6 +103,8 @@
         </div>
       </div>
       <div id="companies">
+      	<h3 style="margin-left: 2%">Companies</h3>
+      	<hr style="margin-left: 1.5%; margin-right: 1.5%;">
         <table>
           <tr>
             <th>Company</th>
@@ -145,14 +131,7 @@
           	<td>Ad Agency</td>
           	<td>Excellent</td>
           </tr>
-          <tr>
-          	<td>Samsung</td>
-          	<td>Electronics</td>
-          	<td>Good</td>
-          </tr>
-          <tr>
-            <td colspan="3"><a href="#" id="linkToCompanies">View all Companies</a></td>
-          </tr>
+          
         </table>
       </div>
     </div> 
@@ -162,25 +141,66 @@
 
 <div class="container">
   <div class="row">
-    <div class="col" id="projects"></div>
+    <div class="col" id="projects">
+    	<h3>Projects</h3>
+    	<hr>
+    	<table>
+    		<tr>
+    			<th>Project</th>
+    			<th>Deadline</th>
+    			<th>Progress</th>
+    		</tr>
+    		<tr>
+    			<td>HRMang1</td>
+    			<td>January 2019</td>
+    			<td><progress value="20" max="100"></progress></td>
+    		</tr>
+    		<tr>
+    			<td>HRMang2</td>
+    			<td>February 2019</td>
+    			<td><progress value="80" max="100"></progress></td>
+    		</tr>
+    		<tr>
+    			<td>HRMang3</td>
+    			<td>August 2019</td>
+    			<td><progress value="65" max="100"></progress></td>
+    		</tr>
+    		<tr>
+    			<td>HRMang4</td>
+    			<td>December 2020</td>
+    			<td><progress value="50" max="100"></progress></td>
+    		</tr>
+    	</table>
+
+    </div>
     <div class="col" id="tasks">
       <h3>Tasks</h3>
+      <hr>
       <form id="tasksList">
+      <table>
+      	<tr>
           <div class="form-check">
             <label>
               <input type="checkbox" name="check"> <span class="label-text">Contact the representative of Unilever</span>
             </label>
           </div>
+        </form>
+    </tr>
+    <tr>
           <div class="form-check">
             <label>
               <input type="checkbox" name="check"> <span class="label-text">Interview the new accountant</span>
             </label>
           </div>
+    </tr>
+    <tr>
           <div class="form-check">
             <label>
               <input type="checkbox" name="check"> <span class="label-text">Contact the representative of Unilever</span>
             </label>
           </div>
+     </tr>
+ </table>
       </form>
     </div>
   </div>
