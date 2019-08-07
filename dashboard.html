@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dashboard</title>
-  <link rel="stylesheet" id="bootstrap-css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="stylesdb.css">	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 <style>
 </style>
@@ -81,10 +80,42 @@
     <div class="col center-split" id="employees-profile-companies">
       <div id="employees-profile">   
         <div id="employees">
-          <label>text1</label>
+          <table>
+          	<tr>
+          		<th>Employee</th>
+          		<th>Job Role
+          	</tr>
+          	<tr>
+          		<td>Karim</td>
+          		<td>Developer</td>
+          	</tr>
+          	<tr>
+          		<td>Ahmed</td>
+          		<td>Developer</td>
+          	</tr>
+          	<tr>
+          		<td>Youssef</td>
+          		<td>Architect</td>
+          	</tr>
+          </table>
+          <p><a href='#' id="linkToCompanies" style="margin-left: 30%;">All Employees</a></p>
         </div>
         <div id="profile">
-          <label>text2</label>
+        	<div class="flip-card">
+        		<div class="flip-card-inner">
+        			<div class="flip-card-front">
+        				<img src="img_avatar3.png" alt="Avatar" style="max-width: 50%; max-height: 100%; margin-left: 25%;">
+        			</div>
+        			<div class="flip-card-back">
+        				<h2>Karim Hesham</h2>
+        				<p>Human Resources Manager</p>
+        				<a href="#"><i class="fa fa-dribbble"></i></a> 
+ 						<a href="#"><i class="fa fa-twitter"></i></a> 
+  						<a href="#"><i class="fa fa-linkedin"></i></a> 
+  						<a href="#"><i class="fa fa-facebook"></i></a> 
+        			</div>
+        		</div>
+        	</div>
         </div>
       </div>
       <div id="companies">
@@ -110,7 +141,19 @@
             <td>Poor</td>
           </tr>
           <tr>
-            <td colspan="3"><a href="#" id="linkToCompanies">View all Companies</a></td>
+          	<td>Impact BBDO</td>
+          	<td>Ad Agency</td>
+          	<td>Excellent</td>
+          </tr>
+          <tr>
+          	<td>Samsung</td>
+          	<td>Electronics</td>
+          	<td>Good</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="#" id="linkToCompanies">View all Companies</a></td>
+            <td></td>
           </tr>
         </table>
       </div>
@@ -122,26 +165,7 @@
 <div class="container">
   <div class="row">
     <div class="col" id="projects"></div>
-    <div class="col" id="tasks">
-      <h3>Tasks</h3>
-      <form id="tasksList">
-        <div class="form-check">
-          <label>
-            <input type="checkbox" name="check"> <span class="label-text">Contact the representative of Unilever</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <label>
-            <input type="checkbox" name="check"> <span class="label-text">Interview the new accountant</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <label>
-            <input type="checkbox" name="check"> <span class="label-text">Contact the representative of Unilever</span>
-          </label>
-        </div>
-      </form>
-    </div>
+    <div class="col" id="tasks"></div>
   </div>
 </div>
 <div class="container">
