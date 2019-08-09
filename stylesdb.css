@@ -26,8 +26,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-
+  margin-top: -8%;
 }
 
 li {
@@ -86,7 +85,6 @@ li p{
 .chip {
   display: inline-block;
   padding: 0 25px;
-  height: 50px;
   font-size: 16px;
   line-height: 50px;
   border-radius: 25px;
@@ -186,7 +184,7 @@ form.example::after {
   left: 0;
   overflow-x: hidden;
   padding-top: 16px;
-  margin-top: 85px;
+  margin-top: 5%;
 }
 
 /* Style sidebar links */
