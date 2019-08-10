@@ -154,7 +154,7 @@ hr{
   top: 0;
   left: 0;
   overflow-x: hidden;
-  margin-top: 5.5%;
+  margin-top: 6.5%;
 }
 
 /* Style sidebar links */
@@ -190,7 +190,7 @@ hr{
   position: absolute;
   left: 50%;
   margin-left: -35%;
-  margin-top: 6%;
+  margin-top: 6.4%;
   top: 0;
   border-color: #116466;
 }
@@ -395,8 +395,9 @@ input[type="checkbox"]:checked + .label-text:before{
 	animation: effect 250ms ease-in;
 }
 
-input[type="checkbox"]:disabled + .label-text{
-	color: #aaa;
+input[type="checkbox"]:checked + span{
+  /* color:red; */
+  text-decoration: line-through;
 }
 
 input[type="checkbox"]:disabled + .label-text:before{
@@ -410,8 +411,7 @@ label{
 	font-size: 19px;
 }
 #tasksList{
-  margin-left: -3.5%;
-  margin-top: 3%;
+  text-align: left;
 }
 
 /* Employee button */

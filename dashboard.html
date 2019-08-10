@@ -182,34 +182,34 @@
     		</div>
 
     		<div class="col" id="tasks">
-      			<h3 style="background-color: #116466; margin-top: 2%; color: white;">Tasks</h3>
-      			<hr>
-       			<form id="tasksList">
-      				<table>
-      					<tr>
-          					<div class="form-check">
-            					<label>
-              						<input type="checkbox" name="check"> <span class="label-text">Contact the representative of Unilever</span>
-            					</label>
-          					</div>
-        		
-    					</tr>
-    					<tr>
-          					<div class="form-check">
-            					<label>
-              						<input type="checkbox" name="check"> <span class="label-text">Interview the new accountant</span>
-            					</label>
-          					</div>
-    					</tr>
-    					<tr>
-          					<div class="form-check">
-            					<label>
-              						<input type="checkbox" name="check"> <span class="label-text">Contact the representative of Unilever</span>
-            					</label>
-          					</div>
-     					</tr>
- 					</table>
-      			</form> 
+				<h3 style="background-color: #116466; margin-top: 2%; color: white;">Tasks</h3>
+				<hr>
+				<table>
+				  <!-- <tr>
+					  <th id="tasksHeader">Tasks</th>
+				  </tr> -->
+				  <tr>
+					<td id="tasksList">
+					  <label>
+						<input type="checkbox" name="check"> <span class="label-text">Contact the representative of Unilever</span>
+					  </label>
+					</td>
+				  </tr>
+				  <tr>
+					<td id="tasksList">
+					  <label>
+						<input type="checkbox" name="check"> <span class="label-text">Interview the new accountant</span>
+					  </label>
+					</td>
+				  </tr>
+				  <tr>
+					<td id="tasksList">
+					  <label>
+						<input type="checkbox" name="check"> <span class="label-text">Meet the boss at 6 PM</span>
+					  </label>
+					</td>
+				  </tr>
+				</table>
     		</div>
   		</div>
 	</div>
@@ -270,7 +270,27 @@
 
 				</ul> 
     		</div>
-    		<div class="col-3" id="employeestructure"></div>
+    		<div class="col-3" id="employeestructure">
+				<h3>Employees Structure</h3>
+				<hr>
+				<table>
+					<tr>
+						<th>Gender</th>
+						<th colspan="2">Percentage</th>
+					</tr>
+					<tr>
+						<td>Male</td>
+						<td>70%</td>
+						<td><progress value="70" max="100"></progress></td>
+					</tr>
+					<tr>
+						<td>Female</td>
+						<td>30%</td>
+						<td><progress value="30" max="100"></progress></td>
+					</tr>
+				</table>
+				
+			</div>
   		</div>
 	</div>
 
