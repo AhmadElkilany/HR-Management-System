@@ -239,6 +239,70 @@ hr{
   border: 1px solid black;
   margin-right: 1%;
 }
+#calendar, ul{
+list-style-type: none;
+}
+/* calendar header */
+.month{
+width: 100%;
+background-color: #1abc9c;
+text-align: center;
+}
+/* month list */
+.month ul{
+  margin: 0;
+  padding: 0;
+}
+.month ul li{
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* previous button in calendar header */
+.month .prev{
+  float: left;
+  padding: 5px;
+}
+/* next button in calendar header */
+.month .next{
+  float: right;
+  padding-top: 5px;
+}
+
+/* weekdays (Mon-Sun) */
+.weekdays{
+  margin: 0;
+  padding: 5px 0;
+  background-color: #ddd;
+}
+.weekdays li{
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+/* Days(1-31) */
+.days{
+  padding: 5px 0;
+  background-color: #eee;
+  margin: 0;
+}
+.days li{
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: #777;
+}
+/* Highlight current day */
+.days li .active{
+  padding: 2px;
+  background-color: #1abc9c;
+  color: white !important
+}
 #employeestructure{
   border: 1px solid black;
   margin-left: 1%;
