@@ -7,6 +7,41 @@ html, body {height: 100%; min-height: 100%}
 .active {
   background-color: white; /* Add an active/current color */
 } 
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: white;
+  overflow: visible;
+}
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #116466;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 5%;
+
+}
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #116466;
+}
+/* Current/active navbar link */
+.active {
+  background-color: white;
+  color: blue;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+} 
+
 hr{
   background-color: #116466;
 }
@@ -26,7 +61,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: -8%;
+ 
 }
 
 li {
@@ -34,6 +69,7 @@ li {
   width:14%;
   font-size: 18px;
   color:#116466;
+  padding-right: 100px;
 }
 
 li a, .dropbtn {
@@ -50,6 +86,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 li.dropdown {
+  position: relative;
   display: inline-block;
 }
 li p{
@@ -60,11 +97,11 @@ li p{
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: white;
+  position: relative;
+  background-color: # 116466;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropdown-content a {
@@ -85,10 +122,12 @@ li p{
 .chip {
   display: inline-block;
   padding: 0 25px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 50px;
   border-radius: 25px;
   background-color: #f1f1f1;
+  width: 155px;
+  height: 50px;
 }
 
 .chip img {
