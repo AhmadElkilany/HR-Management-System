@@ -15,7 +15,51 @@
 </style>
 <body>
 
-
+	<div class="navbar">
+		<div class="chip">
+			<img src="img_avatar3.png" alt="person">John Doe
+		</div>
+		<a href="#home"><i class="fa fa-home"></i></a>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<i class="fa fa-bell"></i>
+			</button>
+			<div class="dropdown-content">
+				<p>--Select--</p>
+				<a href="#">Recent Notifications</a>
+				<a href="#">All Notifications</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<i class="fa fa-sticky-note"></i>
+			</button>
+			<div class="dropdown-content">
+				<p>--Select--</p>
+				<a href="#">Recent Tasks</a>
+				<a href="#">All Tasks</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<i class="fa fa-user"></i>
+			</button>
+			<div class="dropdown-content">
+				<p>--Select--</p>
+				<a href="#">Settings</a>
+				<a href="#">Change Password</a>
+				<a href="#">Logout</a>
+			</div>
+		</div>
+		
+		<div class="search-container">
+			<form action="/action_page.php">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+	<hr>
 
 	<div class="sidebar">
   		<a href="dashboard.html"><i class="fa fa-dashboard"></i> Dashboard</a>
