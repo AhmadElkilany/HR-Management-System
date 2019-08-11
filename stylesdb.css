@@ -215,20 +215,20 @@ hr{
   margin-bottom: 1%;
 }
 #profile{
-    border: 1px solid black;
+    border: 1px solid black; 
     height: 49%;
     margin-top: 1%;
 }
 #companies{
-    border: 1px solid black;
+    border: 1px solid black; 
     height: 100%;
 }
 #reports{
-    border: 1px solid black;
+    border: 1px solid black; 
     margin-left: 1%;
 }
 #projects{
-  border: 1px solid black;
+  border: 1px solid black; 
   margin-right: 1%;
 }
 #tasks{
@@ -304,11 +304,11 @@ text-align: center;
   color: white !important
 }
 #employeestructure{
-  border: 1px solid black;
+  border: 1px solid black; 
   margin-left: 1%;
 }
 table, th, td{
-  /* border: 1px solid black; */
+  border: 1px solid black; 
   border-collapse: collapse;
   text-align: center;
 
@@ -433,7 +433,7 @@ h3{
   margin-left: 2%;
   margin-top: 2%;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
 }
 h5{
   text-align: center;
